@@ -4,17 +4,24 @@ public class Calculator {
 
     public int convert(String toBeConverted)
     {
-    int result = 0;
-    String[] inputToArray = toBeConverted.split("[\\n*]|[,*]");
+        if ( (! (toBeConverted.equals("")) && toBeConverted.length() < 2) )
+            return Integer.parseInt(toBeConverted);
 
-    if (inputToArray.length > 1)
-        result = sumOfValues(inputToArray);
-    if (toBeConverted == "1")
-        result = 1;
-    if (toBeConverted == "3")
-        result = 3;
+        String[] applyNewLineCommaDelim = toBeConverted.split("[\\n*]|[,*]");
 
-    return result;
+        if (applyNewLineCommaDelim[0].equals("//;"))
+        {
+            String customDelimiter = applyNewLineCommaDelim[0].replaceFirst("//", "");
+            String inputToConvert = applyNewLineCommaDelim[1];
+
+            String[] result = inputToConvert.split(customDelimiter);
+            return sumOfValues(result);
+        }
+
+        if (applyNewLineCommaDelim[0].matches("[0-9]"))
+            return sumOfValues(applyNewLineCommaDelim);
+
+        return 0;
     }
 
     public int sumOfValues(String[] inputToSum)
@@ -26,4 +33,10 @@ public class Calculator {
 
         return result;
     }
+
+//    public String inputWithCustomDelimiter(String customDelimiter, String inputWithDelim)
+//    {
+//        String inputStrippedOfDelim = inputWithDelim.replaceFirst(customDelimiter, "");
+//
+//    }
 }

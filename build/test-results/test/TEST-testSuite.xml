@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuite" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-08-20T01:53:07" hostname="C02Y309QJG5J" time="0.003">
+<testsuite name="testSuite" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-08-20T05:00:24" hostname="C02Y309QJG5J" time="0.005">
   <properties/>
   <testcase name="testStringToInt[0:  = 0]" classname="testSuite" time="0.001"/>
   <testcase name="testStringToInt[1: 1 = 1]" classname="testSuite" time="0.0"/>
@@ -7,9 +7,10 @@
   <testcase name="testStringToInt[3: 1,2 = 3]" classname="testSuite" time="0.0"/>
   <testcase name="testStringToInt[4: 3,5 = 8]" classname="testSuite" time="0.0"/>
   <testcase name="testStringToInt[5: 1,2,3 = 6]" classname="testSuite" time="0.0"/>
-  <testcase name="testStringToInt[6: 3,5,3,9 = 20]" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[6: 3,5,3,9 = 20]" classname="testSuite" time="0.001"/>
   <testcase name="testStringToInt[7: 1,2&#10;3 = 6]" classname="testSuite" time="0.0"/>
   <testcase name="testStringToInt[8: 3&#10;5&#10;3,9 = 20]" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[9: //;&#10;1;2 = 3]" classname="testSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
