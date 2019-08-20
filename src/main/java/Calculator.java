@@ -5,7 +5,7 @@ public class Calculator {
     public int convert(String toBeConverted)
     {
     int result = 0;
-    String[] inputToArray = toBeConverted.split(",");
+    String[] inputToArray = toBeConverted.split("[\\n*]|[,*]");
 
     if (inputToArray.length > 1)
         result = sumOfValues(inputToArray);
