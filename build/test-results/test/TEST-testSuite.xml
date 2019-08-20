@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-20T00:50:08" hostname="C02Y309QJG5J" time="0.001">
+<testsuite name="testSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-20T01:00:15" hostname="C02Y309QJG5J" time="0.002">
   <properties/>
-  <testcase name="testStringReturnsOne" classname="testSuite" time="0.001"/>
-  <testcase name="testStringReturnsZero" classname="testSuite" time="0.0"/>
-  <testcase name="testStringReturnsThree" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[0]" classname="testSuite" time="0.001"/>
+  <testcase name="testStringToInt[1]" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[2]" classname="testSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

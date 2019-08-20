@@ -1,37 +1,37 @@
+import org.graalvm.compiler.nodes.calc.ObjectEqualsNode;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+import java.util.Arrays;
+import java.util.Collection;
+
+@RunWith(Parameterized.class)
 public class testSuite {
-    @Test
-    public void testStringReturnsZero()
-    {
-        //arrange
-        Calculator convertString = new Calculator();
-        //act
-        int myResult = convertString.convert("");
-        //assert
-        Assert.assertEquals(0, myResult);
+
+    //arrange
+    @Parameterized.Parameters
+    public static Collection<Object[]> conversionData() {
+        return Arrays.asList(new Object[][]
+                {
+                        {"", 0}, {"1", 1}, {"3", 3}
+                });
     }
 
-    @Test
-    public void testStringReturnsOne()
-    {
-        //arrange
-        Calculator convertString = new Calculator();
-        //act
-        int myResult = convertString.convert("1");
-        //assert
-        Assert.assertEquals(1, myResult);
-    }
+    @Parameterized.Parameter
+    public String testInput;
+
+    @Parameterized.Parameter(1)
+    public int expectedOutput;
 
     @Test
-    public void testStringReturnsThree()
-    {
+    public void testStringToInt() {
         //arrange
         Calculator convertString = new Calculator();
         //act
-        int myResult = convertString.convert("3");
+        int myResult = convertString.convert(testInput);
         //assert
-        Assert.assertEquals(3, myResult);
+        Assert.assertEquals(expectedOutput, myResult);
     }
 }
