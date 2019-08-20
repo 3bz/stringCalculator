@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuite" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-08-20T01:12:49" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="testSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-08-20T01:16:27" hostname="C02Y309QJG5J" time="0.002">
   <properties/>
   <testcase name="testStringToInt[0:  = 0]" classname="testSuite" time="0.001"/>
   <testcase name="testStringToInt[1: 1 = 1]" classname="testSuite" time="0.0"/>
   <testcase name="testStringToInt[2: 3 = 3]" classname="testSuite" time="0.0"/>
-  <testcase name="testStringToInt[3: 1,2 = 3]" classname="testSuite" time="0.001"/>
-  <testcase name="testStringToInt[4: 3,5 = 8]" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[3: 1,2 = 3]" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[4: 3,5 = 8]" classname="testSuite" time="0.001"/>
+  <testcase name="testStringToInt[5: 1,2,3 = 6]" classname="testSuite" time="0.0"/>
+  <testcase name="testStringToInt[6: 3,5,3,9 = 20]" classname="testSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

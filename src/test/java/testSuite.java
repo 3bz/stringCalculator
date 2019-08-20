@@ -14,7 +14,8 @@ public class testSuite {
     public static Collection<Object[]> conversionData() {
         return Arrays.asList(new Object[][]
                 {
-                        {"", 0}, {"1", 1}, {"3", 3}, {"1,2", 3}, {"3,5", 8}
+                        {"", 0}, {"1", 1}, {"3", 3}, {"1,2", 3}, {"3,5", 8},
+                        {"1,2,3", 6}, {"3,5,3,9", 20}
                 });
     }
 
