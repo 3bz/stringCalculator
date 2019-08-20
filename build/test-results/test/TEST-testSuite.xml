@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-20T00:46:46" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="testSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-08-20T00:50:08" hostname="C02Y309QJG5J" time="0.001">
   <properties/>
-  <testcase name="testStringReturnsZero" classname="testSuite" time="0.002"/>
+  <testcase name="testStringReturnsOne" classname="testSuite" time="0.001"/>
+  <testcase name="testStringReturnsZero" classname="testSuite" time="0.0"/>
+  <testcase name="testStringReturnsThree" classname="testSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
