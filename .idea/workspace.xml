@@ -105,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566261494049</updated>
-      <workItem from="1566261497298" duration="11135000" />
+      <workItem from="1566261497298" duration="13454000" />
     </task>
     <servers />
   </component>
@@ -124,6 +124,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/stringCalculator$testSuite.ic" NAME="testSuite Coverage Results" MODIFIED="1566277223609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/stringCalculator$testSuite.ic" NAME="testSuite Coverage Results" MODIFIED="1566280909795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

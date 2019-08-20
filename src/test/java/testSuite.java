@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Assume;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -27,12 +28,61 @@ public class testSuite {
     public int expectedOutput;
 
     @Test
-    public void testStringToInt() {
+    public void testBlankInput() {
         //arrange
-        Calculator convertString = new Calculator();
+        Calculator stringConverter = new Calculator();
         //act
-        int myResult = convertString.convert(testInput);
+        int myResult = stringConverter.convert(testInput);
         //assert
+        Assume.assumeTrue(testInput == "");
+        Assert.assertEquals(expectedOutput, myResult);
+    }
+
+    @Test
+    public void testSingleCharString()
+    {
+        //arrange
+        Calculator stringConverter = new Calculator();
+        //act
+        int myResult = stringConverter.convert(testInput);
+        //assert
+        Assume.assumeTrue(testInput.length() == 1);
+        Assert.assertEquals(expectedOutput, myResult);
+    }
+
+    @Test
+    public void testNewlineDelimiter()
+    {
+        //arrange
+        Calculator stringConverter = new Calculator();
+        //act
+        int myResult = stringConverter.convert(testInput);
+        //assert
+        Assume.assumeTrue(testInput.contains("\n"));
+        Assert.assertEquals(expectedOutput, myResult);
+    }
+
+    @Test
+    public void testCustomDelimiter()
+    {
+        //arrange
+        Calculator stringConverter = new Calculator();
+        //act
+        int myResult = stringConverter.convert(testInput);
+        //assert
+        Assume.assumeTrue(testInput.contains("//"));
+        Assert.assertEquals(expectedOutput, myResult);
+    }
+
+    @Test
+    public void testBasicAddition()
+    {
+        //arrange
+        Calculator stringConverter = new Calculator();
+        //act
+        int myResult = stringConverter.convert(testInput);
+        //assert
+        Assume.assumeTrue(testInput.contains(",") && (!(testInput.contains("\n"))));
         Assert.assertEquals(expectedOutput, myResult);
     }
 }
