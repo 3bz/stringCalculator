@@ -1,4 +1,3 @@
-import org.graalvm.compiler.nodes.calc.ObjectEqualsNode;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,11 +10,11 @@ import java.util.Collection;
 public class testSuite {
 
     //arrange
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: {0} = {1}")
     public static Collection<Object[]> conversionData() {
         return Arrays.asList(new Object[][]
                 {
-                        {"", 0}, {"1", 1}, {"3", 3}
+                        {"", 0}, {"1", 1}, {"3", 3}, {"1,2", 3}, {"3,5", 8}
                 });
     }
 
